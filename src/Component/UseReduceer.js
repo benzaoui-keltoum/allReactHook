@@ -5,7 +5,7 @@ import React,{useReducer} from "react";
 /* if we have more than one action */
 
 const reducer=(state,action)=>{
-  /* it s afunction called when we state has changed
+  /* it s a function called when we state has changed
   and  action is the action happended  {case "action" :"what we do to our state"*/ 
 
     switch(action.type){

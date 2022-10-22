@@ -1,11 +1,11 @@
-import UseReduceer from "./Component/UseReduceer";
+import UseEffectt from "./Component/UseEffectt";
 import "./App.css"
 
 
 function App() {
   return (
     <div className="App">
-      <UseReduceer></UseReduceer>
+      <UseEffectt></UseEffectt>
        </div>
   );
 }
