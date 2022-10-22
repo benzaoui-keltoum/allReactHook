@@ -1,11 +1,11 @@
-import UseEffectt from "./Component/UseEffectt";
+import UseImperativeHandle from "./Component/UseImperativeHandle";
 import "./App.css"
 
 
 function App() {
   return (
     <div className="App">
-      <UseEffectt></UseEffectt>
+      <UseImperativeHandle></UseImperativeHandle>
        </div>
   );
 }
