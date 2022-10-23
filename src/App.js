@@ -1,11 +1,11 @@
-import UseImperativeHandle from "./Component/UseImperativeHandle";
+import UseMemoHook from "./Component/UseMemoHook";
 import "./App.css"
 
 
 function App() {
   return (
     <div className="App">
-      <UseImperativeHandle></UseImperativeHandle>
+      <UseMemoHook></UseMemoHook>
        </div>
   );
 }

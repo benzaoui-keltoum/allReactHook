@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React, { forwardRef, useImperativeHandle, useState } from "react";
 
-
-const Button  =(props)=>{
 //the child Components 
-const [toggle,setToggle]=useState(false)
+
+const Button  =forwardRef((props,ref)=>{
+    // forwardRef allow the functional compent to accespt   refernce from a parent
+        // with forwardRef can grap any reference throw the parent component
+
+
+const [toggle,setToggle]=useState(false);
+useImperativeHandle(ref,()=>({
+    alterToggle(){setToggle(!toggle);
+    },
+}))
 
 return(<>
 
-<button
-onClick={()=>{
-setToggle(!toggle);
-
-
-}}>
+<button>
  Button from child 
 
 
@@ -25,6 +28,6 @@ setToggle(!toggle);
 
 </>)
 
-}
+});
 export default    Button ;
 
